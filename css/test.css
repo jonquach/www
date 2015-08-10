@@ -1,0 +1,22 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.particles {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #030314;
+}
+
+/* Color panel
+    #c40f30
+    #393160
+    #5d7bbc
+    #f0efef
+    #030314
+    #141414
+*/

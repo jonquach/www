@@ -9,12 +9,11 @@
     <meta name="author" content="Jonathan Quach">
     <title>Jonathan Quach</title>
     <link href="img/favicon.ico" rel="icon">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/timeline.css" rel="stylesheet">
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -51,46 +50,128 @@
         </div>
     </nav>
 
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <!-- <div id="particles-js"></div> -->
-                    <div class="col-md-8 col-md-offset-2">
-                        <img src="img/me_up.png" class="img-circle" alt="Me">
-                        <h4 class="brand-heading">Jonathan Quach</h4>
-                        <p class="intro-text">Developer. Designer. Someone.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
+    <section class="hero">
+        <div id="particles-js" class="particles"></div>
+            <div class="col-md-8 abs-centering">
+                <h1 class="true-lies hero-quote glitch" data-text="BREAKING THE RULES">
+                    BREAKING THE RULES
+                </h1>
+                <h4 class="hero-sub-quote">
+                    TO MAKE THEM BETTER
+                </h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="explain" class="hero-explain container-fluid">
+        <div class="row">
+            <h2 class="hero-sub-quote text-center">I WANT TO CHANGE THEM BY</h2>
+            <div class="explain-block col-md-4">
+                <div class="svg-icon world-icon"></div>
+                <h4>RESHAPING IT</h4>
+                <p>
+                    blah
+                </p>
+            </div>
+            <div class="explain-block col-md-4">
+                <div class="svg-icon lightbubble-icon"></div>
+                <h4>BRINGING NEW IDEA</h4>
+                <p>
+                    blah
+                </p>
+            </div>
+            <div class="explain-block col-md-4">
+                <div class="svg-icon code-icon"></div>
+                <h4>BUILDING BETTER</h4>
+                <p>
+                    blah
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="hero-story container-fluid">
+        <div class="row">
+            <div class="story-block col-md-5">
+                <h2>
+                    TO LIVE IN A BETTER WORLD
+                </h2>
+                <p class="text-left">
+                    It's not just that, to be part of something that matter.
+                    To bring new kind of software, to build it
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="hero-about">
+        <div class="row about-row">
+            <div class="about-block">
+                <div class="text-left col-md-8">
+                    <h2>About me</h2>
+                    <p>Hello, I'm Jonathan.
+                        <br/>What I can say is that I'm a 19 year-old (nice) French guy.
+                        <br/>For now, I'm still a student in a school named <a href="http://www.epitech.eu">EPITECH</a>.
+                        <br/>I chose to be a developer for the endless things we can make by programming, with some creativity.
+                        <br/>But I also like to make beautiful things, so I care about designing.
+                        <br/>I like to build websites, and do funny projects.
+                        <br/>When I'm not coding, I take some time to read, listen to good music, play video games, take photos...
+                        <br/>Right now, I have an internship at <a href="http://www.tinyclues.com">tinyclues</a>, and I'm really enjoy it!
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/me2.png" alt="me" class="img-about">
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <section id="about" class="content-section container-fluid">
+    <section id="exp" class="hero-exp container-fluid">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h1>About Me</h1>
-                <span class="border"></span>
-                <p class="sub">Taking a walk...</p>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <img src="img/walk_grey.png" alt="Me" class="img-about">
+            <div class="exp-block text-center col-md-12">
+                <h2>WORKING HARD</h2>
+                <div id="timeline-wrap">
+                    <div id="timeline"></div>
+
+                    <!-- This is the individual marker-->
+                    <div class="marker mfirst">
+                        <span class="hint--top hint--always" data-hint="Here is a marker with more text! &#10; gfgd">
+                            <div class="inner-marker"></div>
+                        </span>
                     </div>
-                    <div class="col-lg-8 col-lg-offset-1">
-                        <p>Hello, I'm Jonathan.
-                            <br/>What I can say is that I'm a 19 year-old (nice) French guy.
-                            <br/>For now, I'm still a student in a school named <a href="http://www.epitech.eu">EPITECH</a>.
-                            <br/>I chose to be a developer for the endless things we can make by programming, with some creativity.
-                            <br/>But I also like to make beautiful things, so I care about designing.
-                            <br/>I like to build websites, and do funny projects.
-                            <br/>When I'm not coding, I take some time to read, listen to good music, play video games, take photos...
-                            <br/>Right now, I have an internship at <a href="http://www.tinyclues.com">tinyclues</a>, and I'm really enjoy it!
-                        </p>
+                    <!-- / marker -->
+
+                    <!-- This is the individual marker-->
+                    <div class="marker m2">
+                    <span class="hint--top hint--error" data-hint="Here is a marker with more text!">
+                    <div class="inner-marker"></div></span></div>
+                    <!-- / marker -->
+
+                    <!-- This is the individual marker-->
+                    <div class="marker m3">
+                    <span class="hint--top hint--warning" data-hint="Here is a marker with more text!">
+                    <div class="inner-marker"></div></span></div>
+                    <!-- / marker -->
+
+                    <!-- This is the individual marker-->
+                    <div class="marker m4">
+                    <span class="hint--top hint--info" data-hint="Here is a marker with more text!">
+                    <div class="inner-marker"></div></span></div>
+                    <!-- / marker -->
+
+                    <!-- This is the individual marker-->
+                    <div class="marker m5">
+                    <span class="hint--top" data-hint="Here is a marker with more text!">
+                    <div class="inner-marker"></div></span></div>
+                    <!-- / marker -->
+
+                    <!-- This is the individual marker-->
+                    <div class="marker mlast">
+                    <span class="hint--top" data-hint="Here is a marker with more text!">
+                    <div class="inner-marker"></div></span></div>
+                    <!-- / marker -->
+                    <div id="timeline-next"></div>
                     </div>
-                </div>
             </div>
         </div>
     </section>
@@ -98,7 +179,7 @@
     <section id="resume" class="content-section container-fluid">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h1>Resume</h1>
+                <h1 class="true-lies">Resume</h1>
                 <span class="border"></span>
                 <p class="sub">Where I was...</p>
                 <ul class="timeline">
@@ -293,8 +374,6 @@
                 </div>
             </div>
         </div>
-        <div id="map">
-        </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -304,14 +383,15 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/particles.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/modernizr.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRGjS5QUIwqBwNVjPtcpRfqnRHJaTcXoo"></script>
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
     <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;

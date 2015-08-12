@@ -29,7 +29,6 @@ $('a[href*=#]:not([href=#])').click(function() {
 $(window).scroll(function() {
 
     var scrollTop = $(this).scrollTop(),
-        windowHeight = $(this).height(),
         menuList = $('a.page-scroll');
 
     // Add active on menu
@@ -54,10 +53,10 @@ $(document).ready(function() {
         particlesJS('particles-js', {
             "particles": {
                 "number": {
-                    "value": 50,
+                    "value": 80,
                     "density": {
                         "enable": true,
-                        "value_area": 600
+                        "value_area": 800
                     }
                 },
                 "color": {
@@ -100,7 +99,7 @@ $(document).ready(function() {
                 },
                 "line_linked": {
                     "enable": true,
-                    "distance": 100,
+                    "distance": 120,
                     "color": "#c40f30",
                     "opacity": 1,
                     "width": 1
@@ -157,35 +156,6 @@ $(document).ready(function() {
                     }
                 }
             },
-            "retina_detect": true,
+            "retina_detect": true
         });
-
-    var $timeline_block = $('.cd-timeline-block'),
-        pos = new google.maps.LatLng(48.793832, 2.372959),
-        map;
-
-    //hide timeline blocks which are outside the viewport
-    $timeline_block.each(function() {
-        if ($(this).offset().top > $(window).scrollTop() + $(window).height() * 0.75) {
-            $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
-        }
-    });
-
-    //on scolling, show/animate timeline blocks when enter the viewport
-    $(window).on('scroll', function() {
-        $timeline_block.each(function() {
-            if ($(this).offset().top <= $(window).scrollTop() + $(window).height() * 0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden')) {
-                $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
-            }
-        });
-    });
-
-    //enable carrousel controls
-    $('.carousel-control.left').click(function() {
-        $('#projects_slide').carousel('prev');
-    });
-
-    $('.carousel-control.right').click(function() {
-        $('#projects_slide').carousel('next');
-    });
 });

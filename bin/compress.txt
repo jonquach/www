@@ -1,0 +1,6 @@
+For js use google Closure compiler :
+    java -jar compiler.jar --js particles.min.js jquery-1.11.1.min.js bootstrap.min.js modernizr.min.js main.js --js_output_file main.min.js
+
+For css yuicompressor doesn't combine... :
+    cat normalize.css bootstrap.min.css timeline.css style.css > all.css
+    yuicompressor all.css -o style.min.css

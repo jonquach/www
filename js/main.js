@@ -158,4 +158,12 @@ $(document).ready(function() {
             },
             "retina_detect": true
         });
+
+    var config = {
+        move: '10px',
+        over: '1.5s',
+        scale: { direction: 'up', power: '0%' }
+    }
+
+    window.sr = new scrollReveal();
 });

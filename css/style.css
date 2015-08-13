@@ -15,7 +15,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Helvetica Neue", "Raleway" Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 16px;
     font-weight: 200;
     color: #f0efef;
@@ -31,7 +31,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Helvetica Neue", "Raleway" Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -105,7 +105,7 @@ footer {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
     text-transform: uppercase;
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Helvetica Neue", "Raleway" Helvetica, Arial, "Lucida Grande", sans-serif;
     background-color: #000;
 }
 
@@ -248,7 +248,7 @@ footer {
 
 .hero-main {
     position: relative;
-    padding: 33rem 0 15rem;
+    padding: 28rem 0 15rem;
     text-align: center;
     float: none;
     margin-left: auto;
@@ -264,6 +264,32 @@ footer {
     font-weight: 200;
     opacity: 0.7;
     letter-spacing: 0.3em;
+}
+
+@media (min-height: 641px) {
+    .hero-main {
+        padding: 40rem 0 15rem;
+    }
+}
+@media (min-height: 768px) {
+    .hero-main {
+        padding: 35rem 0 15rem;
+    }
+}
+@media (min-height: 930px) {
+    .hero-main {
+        padding: 40rem 0 15rem;
+    }
+}
+@media (max-width: 320px) and (max-height: 568px) {
+    .hero-main {
+        padding: 20rem 0 15rem;
+    }
+}
+@media (max-width: 360px) and (max-height: 640px) {
+    .hero-main {
+        padding: 25rem 0 15rem;
+    }
 }
 
 @media (min-width: 768px) {
